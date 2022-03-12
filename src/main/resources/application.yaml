@@ -4,3 +4,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/SpringInit
     username: postgres
     driver : org.postgresql.Driver
+
+  data:
+    mongodb:
+     database : itusers
