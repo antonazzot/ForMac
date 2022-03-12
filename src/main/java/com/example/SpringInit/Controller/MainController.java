@@ -31,4 +31,10 @@ public class MainController {
         userervice.saveUser(user);
         return ResponseEntity.ok(user);
     }
+
+    @ResponseBody
+    @GetMapping(path = "/byName/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<User> findByName (@PathVariable String name) {
+        return ResponseEntity.ok(userervice.getUserByName(name));
+    }
 }

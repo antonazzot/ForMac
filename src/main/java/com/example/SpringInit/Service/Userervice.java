@@ -18,4 +18,8 @@ private final MyRepository myRepository;
    public void saveUser (User user) {
        myRepository.save(user);
    }
+
+   public User getUserByName (String name) {
+      return myRepository.findUserByUserName(name);
+   }
 }
