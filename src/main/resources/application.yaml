@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    password: 29297929
+    url: jdbc:postgresql://localhost:5432/SpringInit
+    username: postgres
+    driver : org.postgresql.Driver
